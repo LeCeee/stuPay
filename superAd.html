@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Super Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="superAd.css" />
+   
+</head>
+<body>
+        <div class="container">
+                <h1> welcome StuPay Super Admin </h1>
+                <!-- <h1> login as</h1> -->
+                <button type="submit" id="createBut">Create Account </button>
+                <button type="submit" id="updateBut">Add money </button>
+                <button type="submit" id="removeBut">Remove Account </button>
+
+                <div class="ActionForm-container">
+                       <div class="create-action-contaier">
+                            <!-- <select id="account-type">
+                                    <option value="" disabled selected>Select your option</option>
+                                    <option value="student"selected="selected" >Student Account</option>
+                                    <option value="vendor">Vendor Account</option>
+                                </select> -->
+
+                                <button type="submit" id="student">Student Account</button>
+                                <button type="submit" id="vendor">vendor Account</button>
+                            <p>
+                            <form class="Create-Action-student">
+                                
+                                    
+                                      <label>ID</label>
+                                      <input type="text" name="ID" id="ID" required>    
+                                    </p>
+                                    <p>
+                                            <label>Roll Number</label>
+                                            <input type="text" name="rollnum" id="rollnum" required>
+                                    </p>
+                                    <p>
+                                            <label>Name</label>
+                                            <input type="text" name="name" id="name" required>
+                                    </p>
+                                    <p>
+                                            <label>course</label>
+                                            <input type="text" name="course" id="course" required>
+                                    </p>
+                                    <p class="full">
+                                            <button type="submit">Submit</button>
+                                          </p>
+                            </form>
+                            <form class="Create-Action-vendor">
+                                
+                                    <label>ID</label>
+                                    <input type="text" name="ID" id="ID" required>    
+                                  </p>
+                                  <p>
+                                        <label>Name</label>
+                                        <input type="text" name="name" id="name" required>
+                                  </p>
+                                  <p>
+                                        <label>bussiness</label>
+                                        <input type="text" name="bussiness" id="bussiness" required>
+                                  </p>
+                                  <p class="full">
+                                          <button type="submit">Submit</button>
+                                 </p>
+                          </form>
+
+                       </div>  
+                </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+<script src="superAd.js"></script>
+</html>
