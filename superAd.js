@@ -38,9 +38,10 @@ var config = {
   firebase.initializeApp(config);
  
 
-var studentRef = firebase.database().ref('Student')
-document.getElementById('Create-Action-student').addEventListener('submit',submitStudentForm);
-function submitForm(e){
+var studentRef = firebase.database().ref('Student');
+
+document.getElementById('student-form').addEventListener('submit',submitStudentForm);
+function submitStudentForm(e){
     e.preventDefault();
     var name = getInput('name');
     var id = getInput('ID');
@@ -54,7 +55,7 @@ function submitForm(e){
 
     // },3000);
 
-    document.getElementById('Create-Action-student').reset();
+    //document.getElementById('Create-Action-student').reset();
 
     console.log(name);
 }
@@ -64,7 +65,7 @@ function getInput(id){
     return   document.getElementById(id).value;
 }
 
-function saveMessages(name,id,rollNo) {
+function saveStudent(name,id,rollNo) {
     var newStudentRef = studentRef.push({
         name:name,
         id:id,
@@ -72,3 +73,40 @@ function saveMessages(name,id,rollNo) {
         currentBalance:0
     });
 }
+
+// var studentRef = firebase.database().ref('NonStudent');
+
+// document.getElementById('vendor-form').addEventListener('submit',submitVendorForm);
+
+// function submitVendorForm(e){
+//     e.preventDefault();
+//     var name = getInput('name');
+//     var id = getInput('ID');
+//     var rollNo = getInput('rollnum')
+
+//     saveStudent(name,id,rollNo);
+//     // document.querySelector('.alert').style.display = 'block';
+
+//     // setTimeout(function() {
+//     // document.querySelector('.alert').style.display = 'none';
+
+//     // },3000);
+
+//     //document.getElementById('Create-Action-student').reset();
+
+//     console.log(name);
+// }
+
+
+// function getInput(id){
+//     return   document.getElementById(id).value;
+// }
+
+// function saveStudent(name,id,rollNo) {
+//     var newStudentRef = studentRef.push({
+//         name:name,
+//         id:id,
+//         rollNo:rollNo,
+//         currentBalance:0
+//     });
+// }
