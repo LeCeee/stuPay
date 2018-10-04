@@ -13,10 +13,11 @@
                 <h1> welcome StuPay Super Admin </h1>
                 <!-- <h1> login as</h1> -->
                 <button type="submit" id="createBut">Create Account </button>
-                <button type="submit" id="updateBut">Add money </button>
+                <button type="submit" id="updateBut"> Update Money</button>
                 <button type="submit" id="removeBut">Remove Account </button>
 
                 <div class="ActionForm-container">
+                    <div class="alert"> Account Created</div>
                        <div class="create-action-contaier">
                             <!-- <select id="account-type">
                                     <option value="" disabled selected>Select your option</option>
@@ -67,7 +68,25 @@
                                  </p>
                           </form>
 
-                       </div>  
+                    </div> 
+                    <div class="add-money-container"> 
+                            <form  id="add-money-id" class="add-money-class" >
+                                <p>
+                                    <label>Student ID</label>
+                                    <input type="text" name="stID" id="stID" required>    
+                                </p>
+                                <p>
+                                        <label>Amount</label>
+                                        <input type="number" name="amount" id="amount" required> 
+                                </p>
+                                <p class="full">
+                                        <button type="submit">Add Money</button>
+                               </p>
+
+                                  
+                          </form>
+
+                    </div> 
                 </div>
 </body>
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
