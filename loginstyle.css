@@ -1,6 +1,6 @@
 body{
-    background:#92bde7;
-    color:#485e74;
+    background: #31bee7;
+    color:#143161;
     line-height:1.6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding:1em;
@@ -10,6 +10,7 @@ body{
     margin-left:auto;
     margin-right:auto;
     padding:1em;
+    text-align: center;
   }
   .loginForm {
       display: none;
