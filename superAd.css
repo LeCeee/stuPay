@@ -13,3 +13,22 @@
 .add-money-container{
     display: none;
 }
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #485e74;
+    color: #c9e6ff;
+    margin-bottom: 10px;
+    display: none;
+  
+  }
+  .btn {
+    margin: 40px;
+  }
+  .btn-info {
+      margin: 20px;
+  }
+  h1{
+      align-content: center;
+      align-self: auto;
+  }
